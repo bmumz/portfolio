@@ -1,0 +1,34 @@
+.footer {
+  background: rgb(68, 68, 68);
+  background: linear-gradient(
+    95deg,
+    rgba(68, 68, 68, 1) 60%,
+    rgba(85, 85, 85, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__socials {
+  display: flex;
+  margin-right: $xl-size;
+}
+
+.footer__social {
+  font-size: $l-size;
+  color: darken($font-color, 15);
+  margin: $l-size;
+}
+
+.footer__social:hover {
+  color: $font-color;
+}
+
+.footer__copyright {
+  margin-left: $xl-size;
+  color: $font-color;
+  font-weight: 100;
+  color: darken($font-color, 15);
+  padding: $m-size;
+}

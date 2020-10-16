@@ -1,0 +1,22 @@
+button {
+  background-color: transparent;
+  border: 1px solid navy;
+  color: navy;
+  margin: $s-size $s-size $s-size 0;
+  padding: $s-size;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
+  outline: none;
+}
+
+button:hover {
+  background: rgba(9, 9, 121, 20);
+  background: linear-gradient(
+    54deg,
+    rgba(9, 9, 121, 1) 31%,
+    rgba(9, 48, 121, 1) 80%
+  );
+
+  color: $font-color;
+}
