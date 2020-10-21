@@ -9,7 +9,7 @@ const Projects = () => (
     <Project
       projectName="Island Horizons"
       liveLink="https://www.islandhorizons.com"
-      gif="https://i.ibb.co/SyQ6G6m/02.gif"
+      gif="https://i.ibb.co/T4yCdtw/Island-Horizons-1.gif"
       gitLink="https://github.com/bmumz/island-horizons"
       stack={
         <div className="project__stack">
@@ -39,9 +39,9 @@ const Projects = () => (
     <hr />
     <Project
       projectName="Caswell Construction"
-      liveLink="https://www.islandhorizons.com"
+      liveLink="https://caswell-construction.netlify.app/"
       gitLink="https://github.com/bmumz/caswellConstruction"
-      gif="https://i.ibb.co/L1tgL32/whats-In-This.gif"
+      gif="https://i.ibb.co/2Sc262q/Caswell-Construction.gif"
       stack={
         <div className="project__stack">
           <FontAwesomeIcon icon={faJsSquare} className="project__icon" />{" "}
@@ -72,7 +72,7 @@ const Projects = () => (
     <Project
       projectName="...What's In This?"
       liveLink="https://whats-in-this.herokuapp.com/"
-      gif="https://i.ibb.co/L1tgL32/whats-In-This.gif"
+      gif="https://i.ibb.co/bvcvfRn/whatsinthis-1.gif"
       gitLink="https://github.com/bmumz/whats-in-this"
       stack={
         <div className="project__stack">

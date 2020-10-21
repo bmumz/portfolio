@@ -16,6 +16,7 @@
 }
 .project__icon {
   margin-right: 0.5rem;
+  color: #333444;
 }
 
 .project__stackName {
@@ -32,11 +33,12 @@
   text-decoration: underline;
 }
 .project__writeup {
-  margin: 0;
+  margin-top: $s-size;
 }
 
 .project__details {
   font-size: $m-size;
+  color: #333333;
   margin: 0;
 }
 
@@ -45,6 +47,7 @@
   align-items: center;
   justify-items: center;
   max-width: 85vw;
+  max-height: 320px;
   height: auto;
 }
 @media (min-width: 950px) {
