@@ -9,12 +9,12 @@ const Intro = () => {
   return (
     <div className="intro layout">
       <Fade left>
-        <div>
-          <h1>
+        <div className="intro__blurb">
+          <p>
             Hi, I'm <span className="intro__name">Brandi Mummery</span>—
-          </h1>
-          <h1>a web developer with a passion for UX design.</h1>
-          <h1>
+          </p>
+          <p>a web developer with a passion for UX design.</p>
+          <p>
             <FontAwesomeIcon
               icon={faMapMarkerAlt}
               className="intro__location"
@@ -24,10 +24,12 @@ const Intro = () => {
               icon={faCanadianMapleLeaf}
               className="intro__mapleleaf"
             />
-          </h1>
-          <AnchorLink href="#about">
-            <button className="button slide">Learn More</button>
-          </AnchorLink>
+          </p>{" "}
+          <p>
+            <AnchorLink href="#about">
+              <button className="intro__button">Learn More</button>
+            </AnchorLink>
+          </p>
         </div>{" "}
       </Fade>
     </div>

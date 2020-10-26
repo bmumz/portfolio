@@ -3,8 +3,14 @@
   display: flex;
   align-items: center;
   padding: 0 $xl-size;
-  h1 {
+}
+
+.intro__blurb {
+  p {
     font-size: 4rem;
+    color: $font-color;
+    font-weight: 400;
+    margin: $l-size;
   }
 }
 
@@ -18,4 +24,10 @@
 
 .intro__location {
   color: $navy;
+}
+
+.intro__button {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
