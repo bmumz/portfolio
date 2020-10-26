@@ -11,6 +11,9 @@
 
 .contact__method {
   display: flex;
+  h3 {
+    color: $font-color;
+  }
 }
 .contact__icon {
   font-size: $l-size;

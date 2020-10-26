@@ -1,3 +1,13 @@
+.intro {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 $xl-size;
+  h1 {
+    font-size: 4rem;
+  }
+}
+
 .intro__name {
   color: $navy;
 }
