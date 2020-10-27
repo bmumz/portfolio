@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "./image"
-import Fade from "react-reveal/Fade"
+import AboutList from "./aboutList"
 
 const About = () => (
   <div id="about">
@@ -23,18 +23,22 @@ const About = () => (
             and user-friendly experiences with a 3 step process:
           </div>
 
-          <ul className="about__ul ">
-            <Fade right cascade>
-              <li className="about__li">#1 Research—</li>
-              What specific issues need to be addressed? What value will it
-              provide?
-              <li className="about__li">#2 Design—</li>
-              Create prototypes designs/wireframes, keeping research in mind.
-              <li className="about__li">#3 Develop—</li>
-              Utilize research and designs to produce a shiny new finished
-              project!
-            </Fade>
-          </ul>
+          <div className="about__list">
+            <AboutList
+              listItem="#1 Research"
+              listCaption="What specific issues need to be addressed? What value will it
+              provide?"
+            />
+            <AboutList
+              listItem="#2 Design"
+              listCaption="Create prototypes designs/wireframes, keeping research in mind."
+            />
+            <AboutList
+              listItem="#3 Develop"
+              listCaption=" Utilize research and designs to produce a shiny new finished
+              project!"
+            />
+          </div>
         </div>
       </div>
     </div>

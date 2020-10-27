@@ -32,21 +32,20 @@
   height: auto;
 }
 
-.about__ul {
+.about__list {
   margin-bottom: $m-size;
   margin-left: $m-size;
 }
-.about__li {
-  list-style: none;
+.about__title {
+  color: $font-color;
   font-size: 2rem;
+  margin-bottom: $s-size;
   margin-top: $m-size;
-  margin-left: 0;
+  font-weight: 400;
 }
 
-.about__li--caption {
+.about__caption {
   color: $font-color;
-  margin: 0;
-  margin-top: $s-size;
   font-size: $m-size;
   align-items: center;
 }
