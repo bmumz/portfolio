@@ -26,13 +26,12 @@ const Intro = () => {
               size="lg"
               className="intro__mapleleaf"
             />
-          </p>{" "}
-          <p>
-            <button className="intro__button">
-              <AnchorLink href="#about">Learn More</AnchorLink>
-            </button>
           </p>
-        </div>{" "}
+
+          <AnchorLink href="#about" className="intro__button button">
+            Learn More
+          </AnchorLink>
+        </div>
       </Fade>
     </div>
   )

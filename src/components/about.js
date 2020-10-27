@@ -26,19 +26,13 @@ const About = () => (
           <ul className="about__ul ">
             <Fade right cascade>
               <li className="about__li">#1 Research—</li>
-              <p className="about__li--caption">
-                What specific issues need to be addressed? What value will it
-                provide?
-              </p>
+              What specific issues need to be addressed? What value will it
+              provide?
               <li className="about__li">#2 Design—</li>
-              <p className="about__li--caption">
-                Create prototypes designs/wireframes, keeping research in mind.
-              </p>
+              Create prototypes designs/wireframes, keeping research in mind.
               <li className="about__li">#3 Develop—</li>
-              <p className="about__li--caption">
-                Utilize research and designs to produce a shiny new finished
-                project!
-              </p>
+              Utilize research and designs to produce a shiny new finished
+              project!
             </Fade>
           </ul>
         </div>

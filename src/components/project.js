@@ -12,19 +12,25 @@ export default class Project extends Component {
             <div className="project__name">{projectName}</div>
             <div className="project__stack">{stack}</div>
             <div className="project__details">{writeUp}</div>
-            <button className="button project--link">
-              <a href={liveLink} target="_blank" rel="noreferrer">
-                {" "}
-                See Live
-              </a>
-            </button>
 
-            <button className="button project--link">
+            <a
+              href={liveLink}
+              className="button project--link"
+              target="_blank"
+              rel="noreferrer"
+            >
               {" "}
-              <a href={gitLink} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon={faGithub} /> Source Code
-              </a>
-            </button>
+              See Live
+            </a>
+
+            <a
+              href={gitLink}
+              className="button project--link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} /> Source Code
+            </a>
           </div>
           <div>
             <img src={gif} alt={projectName} className="project__image" />

@@ -1,4 +1,4 @@
-button {
+.button {
   background-color: transparent;
   border: 1px solid navy;
   color: navy;
@@ -17,7 +17,7 @@ button {
   }
 }
 
-button:hover {
+.button:hover {
   background: rgba(9, 9, 121, 20);
   background: linear-gradient(
     54deg,

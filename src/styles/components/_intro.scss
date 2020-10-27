@@ -39,7 +39,7 @@
 .intro__button {
   font-size: $m-size;
   font-weight: 300;
-  letter-spacing: 2px;
+  margin-left: $l-size;
 }
 
 @media (min-width: $desktop-breakpoint) {
