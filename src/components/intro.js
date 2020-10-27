@@ -19,8 +19,8 @@ const Intro = () => {
               icon={faMapMarkerAlt}
               size="lg"
               className="intro__location"
-            />{" "}
-            Toronto, Ontario{" "}
+            />
+            Toronto, Ontario
             <FontAwesomeIcon
               icon={faCanadianMapleLeaf}
               size="lg"

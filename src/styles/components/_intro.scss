@@ -3,33 +3,49 @@
   display: flex;
   align-items: center;
   padding: 0 $xl-size;
+  font-size: 2.3rem;
 }
 
 .intro__blurb {
   p {
-    font-size: 4rem;
     color: $font-color;
     font-weight: 400;
     margin: $l-size;
+    display: flex;
+    align-items: baseline;
   }
 }
 
 .intro__name {
+  padding-left: $s-size;
   color: $navy;
 }
 
 .intro__mapleleaf {
+  padding-left: $s-size;
+  width: auto;
+  max-height: $l-size;
   color: #c1220c;
-  font-size: 4rem;
 }
 
 .intro__location {
+  padding-right: $s-size;
   color: $navy;
-  font-size: 4rem;
+  width: auto;
+  max-height: $l-size;
 }
 
 .intro__button {
-  font-size: 2.5rem;
+  font-size: $m-size;
   font-weight: 300;
   letter-spacing: 2px;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .intro {
+    font-size: 3rem;
+  }
+  .intro__button {
+    font-size: 2rem;
+  }
 }
