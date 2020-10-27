@@ -34,6 +34,7 @@
 
 .about__ul {
   margin-bottom: $m-size;
+  margin-left: $m-size;
 }
 .about__li {
   list-style: none;
@@ -43,6 +44,9 @@
 }
 
 .about__li--caption {
+  color: $font-color;
+  margin: 0;
+  margin-top: $s-size;
   font-size: $m-size;
   align-items: center;
 }
@@ -53,11 +57,6 @@
     font-size: 2rem;
     margin-top: $m-size;
     margin-right: $m-size;
-  }
-
-  .about__steps {
-    display: flex;
-    align-items: baseline;
   }
 
   .about__image {

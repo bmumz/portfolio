@@ -8,6 +8,13 @@ button {
   letter-spacing: 1px;
   transition: all 0.5s ease-in-out;
   outline: none;
+  a {
+    transition: all 0.5s ease-in-out;
+    color: $navy;
+  }
+  a:hover {
+    color: $font-color;
+  }
 }
 
 button:hover {
@@ -17,6 +24,5 @@ button:hover {
     rgba(9, 9, 121, 1) 31%,
     rgba(9, 48, 121, 1) 80%
   );
-
   color: $font-color;
 }

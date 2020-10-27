@@ -28,9 +28,9 @@ const Intro = () => {
             />
           </p>{" "}
           <p>
-            <AnchorLink href="#about">
-              <button className="intro__button">Learn More</button>
-            </AnchorLink>
+            <button className="intro__button">
+              <AnchorLink href="#about">Learn More</AnchorLink>
+            </button>
           </p>
         </div>{" "}
       </Fade>
