@@ -17,11 +17,13 @@ const Intro = () => {
           <p>
             <FontAwesomeIcon
               icon={faMapMarkerAlt}
+              size="lg"
               className="intro__location"
             />{" "}
             Toronto, Ontario{" "}
             <FontAwesomeIcon
               icon={faCanadianMapleLeaf}
+              size="lg"
               className="intro__mapleleaf"
             />
           </p>{" "}

@@ -4,11 +4,13 @@ import Footer from "../components/footer"
 import About from "../components/about"
 import Contact from "../components/contact"
 import Projects from "../components/projects"
+import Seo from "../components/seo"
 import "normalize.css"
 import "../styles/styles.scss"
 
 const IndexPage = () => (
   <div>
+    <Seo />
     <Intro />
     <About />
 

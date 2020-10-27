@@ -1,8 +1,17 @@
 module.exports = {
   siteMetadata: {
     title: `Brandi Mummery, Web Developer.`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Web developer with a passion for UX design.`,
+    keywords: [
+      "web developer",
+      "web developer Toronto",
+      "self-taught web developer",
+      "web developer for hire",
+      "Brandi Mummery",
+      "Brandi Mummery, Web Developer",
+    ],
     author: `Brandi Mummery`,
+    siteUrl: `https://www.brandimummery.dev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,13 +27,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Brandi Mummery, Web Developer`,
+        short_name: `Brandi Mummery`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#dcc7b6`,
+        theme_color: `#dcc7b6`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,
