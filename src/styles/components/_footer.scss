@@ -12,13 +12,13 @@
 
 .footer__socials {
   display: flex;
-  margin-right: $xl-size;
+  margin-right: $m-size;
 }
 
 .footer__social {
   font-size: $l-size;
+  margin: $s-size;
   color: darken($font-color, 15);
-  margin: $l-size;
 }
 
 .footer__social:hover {
@@ -26,9 +26,15 @@
 }
 
 .footer__copyright {
-  margin-left: $xl-size;
   color: $font-color;
   font-weight: 100;
   color: darken($font-color, 15);
   padding: $m-size;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .footer__social {
+    margin: $l-size;
+    font-size: 3rem;
+  }
 }
