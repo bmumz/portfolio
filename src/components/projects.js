@@ -9,8 +9,8 @@ const Projects = () => (
     <Project
       projectName="Island Horizons"
       liveLink="https://www.islandhorizons.com"
-      gif="https://i.ibb.co/T4yCdtw/Island-Horizons-1.gif"
       gitLink="https://github.com/bmumz/island-horizons"
+      gif="https://i.ibb.co/bRB5QTF/isl-Hor-portfolio.png"
       stack={
         <div className="project__stack">
           <FontAwesomeIcon icon={faJsSquare} className="project__icon" />{" "}
@@ -41,7 +41,7 @@ const Projects = () => (
       projectName="Caswell Construction"
       liveLink="https://caswell-construction.netlify.app/"
       gitLink="https://github.com/bmumz/caswellConstruction"
-      gif="https://i.ibb.co/2Sc262q/Caswell-Construction.gif"
+      gif="https://i.ibb.co/m0dfY3P/cas-Con-portfolio.png"
       stack={
         <div className="project__stack">
           <FontAwesomeIcon icon={faJsSquare} className="project__icon" />{" "}
