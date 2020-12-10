@@ -41,7 +41,7 @@ const Projects = () => (
 
     <Project
       projectName="Caswell Construction"
-      liveLink="https://caswell-construction.netlify.app/"
+      liveLink="https://caswellconstruction.ca"
       gitLink="https://github.com/bmumz/caswellConstruction"
       image="https://i.ibb.co/m0dfY3P/cas-Con-portfolio.png"
       stack={
