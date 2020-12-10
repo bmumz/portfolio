@@ -4,7 +4,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 export default class Project extends Component {
   render() {
-    let { projectName, liveLink, gif, gitLink, stack, writeUp } = this.props
+    let { projectName, liveLink, image, gitLink, stack, writeUp } = this.props
     return (
       <div>
         <div className="project ">
@@ -33,7 +33,7 @@ export default class Project extends Component {
             </a>
           </div>
           <div>
-            <img src={gif} alt={projectName} className="project__image" />
+            <img src={image} alt={projectName} className="project__image" />
           </div>
         </div>
       </div>

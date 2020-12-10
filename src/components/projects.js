@@ -6,11 +6,12 @@ import { faNode, faJsSquare, faReact } from "@fortawesome/free-brands-svg-icons"
 const Projects = () => (
   <div>
     <h1 className="title">Projects</h1>
+
     <Project
       projectName="Island Horizons"
       liveLink="https://www.islandhorizons.com"
       gitLink="https://github.com/bmumz/island-horizons"
-      gif="https://i.ibb.co/bRB5QTF/isl-Hor-portfolio.png"
+      image="https://i.ibb.co/bRB5QTF/isl-Hor-portfolio.png"
       stack={
         <div className="project__stack">
           <FontAwesomeIcon icon={faJsSquare} className="project__icon" />{" "}
@@ -37,11 +38,12 @@ const Projects = () => (
       }
     />
     <hr />
+
     <Project
       projectName="Caswell Construction"
       liveLink="https://caswell-construction.netlify.app/"
       gitLink="https://github.com/bmumz/caswellConstruction"
-      gif="https://i.ibb.co/m0dfY3P/cas-Con-portfolio.png"
+      image="https://i.ibb.co/m0dfY3P/cas-Con-portfolio.png"
       stack={
         <div className="project__stack">
           <FontAwesomeIcon icon={faJsSquare} className="project__icon" />{" "}
@@ -68,11 +70,12 @@ const Projects = () => (
         </div>
       }
     />
+
     <hr />
     <Project
       projectName="...What's In This?"
       liveLink="https://whats-in-this.herokuapp.com/"
-      gif="https://i.ibb.co/bvcvfRn/whatsinthis-1.gif"
+      image="https://i.ibb.co/6nRRwTK/wit-portfolio.png"
       gitLink="https://github.com/bmumz/whats-in-this"
       stack={
         <div className="project__stack">
