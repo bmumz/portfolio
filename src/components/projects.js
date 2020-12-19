@@ -9,7 +9,7 @@ const Projects = () => (
 
     <Project
       projectName="You Go, Girl!"
-      liveLink="https://www.you-go-girl.vercel.app"
+      liveLink="https://you-go-girl.vercel.app/"
       gitLink="https://github.com/bmumz/you-go-girl"
       image="https://i.ibb.co/RcLvrZG/ygg-portfolio.png"
       stack={
