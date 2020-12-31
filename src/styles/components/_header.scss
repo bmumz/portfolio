@@ -1,0 +1,13 @@
+.header {
+  color: $navy;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: $m-size;
+  align-items: center;
+}
+
+.header__laptop {
+  font-size: 4rem;
+  padding: $xs-size;
+}

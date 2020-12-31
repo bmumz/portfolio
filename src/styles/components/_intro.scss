@@ -1,20 +1,13 @@
-.intro {
-  min-height: 100vh;
-  max-height: 100vh;
+.intro__test {
   display: flex;
-  align-items: center;
-  padding: 0 $xl-size;
-  font-size: 2.3rem;
+  flex-direction: column;
 }
 
-.intro__blurb {
-  p {
-    color: $font-color;
-    font-weight: 500;
-    margin: $l-size;
-    display: flex;
-    align-items: baseline;
-  }
+.test {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro__name {

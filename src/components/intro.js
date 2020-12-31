@@ -1,20 +1,22 @@
 import React from "react"
+
 import Fade from "react-reveal/Fade"
 import AnchorLink from "react-anchor-link-smooth-scroll"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCanadianMapleLeaf } from "@fortawesome/free-brands-svg-icons"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 
 const Intro = () => {
   return (
-    <div className="intro layout">
-      <Fade left>
+    <div className="intro">
+      <div className="intro__container">
         <div className="intro__blurb">
-          <p>
+          <h1>
             Hi, I'm <span className="intro__name">Brandi Mummery</span>—
-          </p>
-          <p>a web developer with a passion for UX design.</p>
-          <p>
+            <br />
+            a web developer with a passion for UX design.
+            <br />
             <FontAwesomeIcon
               icon={faMapMarkerAlt}
               size="lg"
@@ -26,13 +28,9 @@ const Intro = () => {
               size="lg"
               className="intro__mapleleaf"
             />
-          </p>
-
-          <AnchorLink href="#about" className="intro__button button">
-            Learn More
-          </AnchorLink>
+          </h1>
         </div>
-      </Fade>
+      </div>
     </div>
   )
 }

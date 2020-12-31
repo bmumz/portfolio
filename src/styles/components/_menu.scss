@@ -1,0 +1,45 @@
+.menu__button {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu__nav {
+  position: fixed;
+  background-color: $navy;
+  visibility: hidden;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  height: 45vh;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out,
+    visibility 0.3s;
+  background: $navy;
+}
+
+.menu__nav.active {
+  position: fixed;
+  background: $navy;
+  width: 100vw;
+  height: 45vh;
+  opacity: 1;
+  left: 0;
+  bottom: 0;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.menu__list {
+  padding-top: $m-size;
+  font-size: 2rem;
+  list-style: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-evenly;
+  a {
+    color: #e4e4e4;
+  }
+  a:hover {
+    color: #d5d5d5;
+  }
+}
