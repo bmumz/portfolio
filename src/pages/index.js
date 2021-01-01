@@ -14,10 +14,11 @@ import "../styles/styles.scss"
 const IndexPage = () => (
   <div>
     <Seo />
-    <div className="test">
-      <div className="intro__test">
+    <div className="landingPage">
+      <div className="landingPage__intro">
         <Intro />
-
+      </div>
+      <div className="landingPage__nav">
         <Router>
           <Menu />
           <Switch>

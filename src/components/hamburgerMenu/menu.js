@@ -9,8 +9,8 @@ function Menu() {
 
   return (
     <div>
-      <div className=" menu__button">
-        <button onClick={showNavbar} className="button">
+      <div className="menu__button">
+        <button onClick={showNavbar} className=" button">
           LEARN MORE
         </button>{" "}
       </div>
@@ -20,7 +20,10 @@ function Menu() {
           {MenuData.map((menuItem, index) => {
             return (
               <li key={index}>
-                <Link to={menuItem.path}>{menuItem.title}</Link>
+                <Link to={menuItem.path}>
+                  <h2 className="menu__icons">{menuItem.icon}</h2>
+                  {menuItem.title}
+                </Link>
               </li>
             )
           })}
