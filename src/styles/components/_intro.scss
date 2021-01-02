@@ -1,15 +1,10 @@
-.intro__test {
-  display: flex;
-  flex-direction: column;
-}
-
 .intro {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 80vw;
-  font-size: 2rem;
+  min-width: 60vw;
+  font-size: 2.5rem;
 }
 
 .intro__icons {
@@ -44,7 +39,7 @@
   .intro {
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 55%;
     transform: translateX(-50%);
     width: auto;
     font-size: $xl-size;

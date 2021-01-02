@@ -1,11 +1,13 @@
+import React from "react"
 import Seo from "./seo"
 import Header from "./header"
 import Footer from "./footer"
 
-export const Layout = () => (
+const Layout = () => (
   <div>
     <Seo />
     <Header />
-    <Footer />
   </div>
 )
+
+export default Layout
