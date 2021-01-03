@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import Menu from "./hamburgerMenu/menu"
+import Image from "./image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCanadianMapleLeaf } from "@fortawesome/free-brands-svg-icons"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
@@ -13,7 +14,9 @@ const Intro = () => {
       <div className="landingPage__nav">
         <div className="menu__button">
           <button onClick={showNavbar} className=" button">
-            🍔
+            <span role="img" aria-label="menu">
+              🍔
+            </span>
           </button>{" "}
         </div>
         <nav className={` menu__nav ${navbar ? "active" : "inactive"}`}>
@@ -22,6 +25,8 @@ const Intro = () => {
       </div>
       <div className="landingPage__intro">
         <h1 className="intro">
+          <Image />
+
           <span>
             Hi, I'm <span className="intro__name">Brandi Mummery</span>—
             <br />
