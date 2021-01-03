@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql, Link } from "gatsby"
 
-const BlogHome = props => {
+const Blog = props => {
   const postList = props.data.allMarkdownRemark
   return (
     <div>
@@ -29,7 +29,7 @@ const BlogHome = props => {
   )
 }
 
-export default BlogHome
+export default Blog
 
 export const blogList = graphql`
   query BlogPost {

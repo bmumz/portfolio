@@ -1,7 +1,16 @@
+.projects {
+  padding: $xl-size 0;
+}
+
 .project {
   padding: $s-size;
   display: flex;
   flex-direction: column-reverse;
+  background: lighten($nude, 9);
+  padding: $m-size;
+  border-radius: 10px;
+  max-width: 100rem;
+  margin: $s-size auto;
 }
 
 .project__stack {
@@ -23,13 +32,15 @@
   font-size: $m-size;
   margin: 0;
 }
-.project__name {
+.project__title {
   font-size: 2.3rem;
   color: $navy;
   margin: 0;
   margin-top: $xs-size;
   margin-bottom: $xs-size;
   text-transform: uppercase;
+  font-weight: 400;
+
   letter-spacing: 0.5px;
 }
 .project__writeup {

@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 
-export default function Template({ data, siteMetadata }) {
+export default function Template({ data }) {
   const { markdownRemark: post } = data
 
   return (
