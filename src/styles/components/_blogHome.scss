@@ -1,0 +1,25 @@
+.blog {
+  background-color: $navy;
+  padding: $l-size;
+}
+
+.blog__subtitle {
+  color: #dfdfdf;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  font-weight: 300;
+}
+.blog__title {
+  color: #dfdfdf;
+  padding-bottom: $s-size;
+}
+
+.blog__date {
+  color: #b3b3b3;
+  font-style: italic;
+}
+
+.blog__excerpt {
+  color: #c7c7c7;
+  padding-top: $s-size;
+}

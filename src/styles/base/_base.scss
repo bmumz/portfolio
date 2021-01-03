@@ -34,7 +34,9 @@ h1 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   font-weight: 400;
+  margin: 0;
 }
+
 h3 {
   font-weight: 400;
 }
@@ -58,11 +60,12 @@ ul {
 }
 
 hr {
-  background-color: $almost-black;
+  background-color: $font-color;
   border: none;
   height: 0.5px;
   outline: none;
   opacity: 20%;
+  margin-top: $l-size;
 }
 .title {
   text-align: center;

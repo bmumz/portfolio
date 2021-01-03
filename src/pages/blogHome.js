@@ -8,18 +8,22 @@ const BlogHome = props => {
     <div>
       <Layout />
       <div className=" blog">
-        {postList.edges.map(({ node }, index) => (
-          <div key={index} className="layout">
-            <Link to={`/blog${node.frontmatter.path}`}>
-              <h1>{node.frontmatter.title}</h1>
-            </Link>
-            <hr />
-            <span>{node.frontmatter.date}</span>
-            <Link to={node.frontmatter.path}>
-              <p>{node.excerpt}</p>
-            </Link>
-          </div>
-        ))}
+        <div className="layout">
+          <h3 className="blog__subtitle">RECENT POSTS</h3>{" "}
+          {postList.edges.map(({ node }, index) => (
+            <div key={index}>
+              <Link to={node.frontmatter.path}>
+                <h1 className="blog__title">{node.frontmatter.title}</h1>
+              </Link>
+
+              <span className="blog__date">{node.frontmatter.date}</span>
+              <Link to={node.frontmatter.path}>
+                <p className="blog__excerpt">{node.excerpt}</p>
+              </Link>
+              <hr />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

@@ -1,12 +1,17 @@
 import React from "react"
+import Layout from "../components/layout"
 
-export default function Template({ data }) {
+export default function Template({ data, siteMetadata }) {
   const { markdownRemark: post } = data
 
   return (
     <div>
-      <div>
-        <h1>{post.frontmatter.title}</h1>
+      <Layout />
+      <div className="blogPost layout">
+        <h1 className="blogPost__title">{post.frontmatter.title}</h1>
+        <span className="blogPost__author">Written by Brandi Mummery</span>
+        <br />
+        <span className="blogPost__date">{post.frontmatter.date}</span>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </div>
