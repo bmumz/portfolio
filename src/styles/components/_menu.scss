@@ -1,54 +1,51 @@
 .menu__nav {
-  position: fixed;
-  background-color: $navy;
   visibility: hidden;
   width: 100vw;
-  height: 20 vh;
-  left: 0;
-  top: 0;
   opacity: 0;
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out,
     visibility 0.3s;
-  background: $navy;
 }
 
 .menu__nav.active {
-  position: fixed;
-  background: $navy;
   width: 100vw;
-  height: 20vh;
-  z-index: 1;
   opacity: 1;
-  left: 0;
-  top: 0;
   visibility: visible;
-  transform: translateX(0);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
 }
 
 .menu__list {
-  padding-top: $m-size;
-  font-size: 2rem;
+  padding: $s-size;
+  background-color: $navy;
+  position: absolute;
+  left: 0;
+  top: 0;
   list-style: none;
-  letter-spacing: 3px;
+  font-size: 2.5rem;
   text-transform: uppercase;
+  letter-spacing: 2px;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  width: 100vw;
   a {
-    color: #e4e4e4;
-  }
-  a:hover {
-    color: #d5d5d5;
-    transform: scale(1.1);
+    color: $font-color;
   }
 }
 
 .menu__button {
-  display: flex;
-  justify-content: flex-start;
-  padding: $m-size;
-}
-
-.menu__icons {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  outline: none;
+  border: none;
+  padding: $s-size;
+  padding-left: $m-size;
+  font-size: 2.5rem;
+  color: $font-color;
+  // background-color: $navy;
+  cursor: pointer;
 }

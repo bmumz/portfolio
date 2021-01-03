@@ -6,27 +6,13 @@ import { faCanadianMapleLeaf } from "@fortawesome/free-brands-svg-icons"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 
 const Intro = () => {
-  const [navbar, setNavbar] = useState(false)
-
-  const showNavbar = () => setNavbar(!navbar)
   return (
-    <div className="landingPage">
-      <div className="landingPage__nav">
-        <div className="menu__button">
-          <button onClick={showNavbar} className=" button">
-            <span role="img" aria-label="menu">
-              🍔
-            </span>
-          </button>{" "}
-        </div>
-        <nav className={` menu__nav ${navbar ? "active" : "inactive"}`}>
-          <Menu />
-        </nav>
-      </div>
-      <div className="landingPage__intro">
-        <h1 className="intro">
+    <div className="intro">
+      <div className="intro__container">
+        <div className="intro__img">
           <Image />
-
+        </div>
+        <div className="intro__blurb">
           <span>
             Hi, I'm <span className="intro__name">Brandi Mummery</span>—
             <br />
@@ -46,7 +32,7 @@ const Intro = () => {
               className="intro__mapleleaf"
             />
           </span>
-        </h1>
+        </div>
       </div>
     </div>
   )

@@ -9,12 +9,12 @@ const Projects = () => (
 
     {ProjectData.map((project, index) => {
       return (
-        <div className="project ">
-          <div key={index} className="project__writeup">
-            <p className="project__title">{project.title}</p>
+        <div key={index} className="project ">
+          <div className="project__writeup">
+            <div className="project__title">{project.title}</div>
 
-            <p className="project__stack">{project.stack}</p>
-            <p className="project__details">{project.details}</p>
+            <div className="project__stack">{project.stack}</div>
+            <div className="project__details">{project.details}</div>
             <a
               href={project.link}
               className="button project--link"

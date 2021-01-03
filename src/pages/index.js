@@ -1,5 +1,6 @@
 import React from "react"
 import Seo from "../components/seo"
+import Menu from "../components/hamburgerMenu/menu"
 import Intro from "../components/intro"
 import About from "../components/about"
 import Projects from "../components/projects/projects"
@@ -10,11 +11,10 @@ import "../styles/styles.scss"
 const IndexPage = () => (
   <div>
     <Seo />
-    <div className="landingPage">
-      <Intro />
-      <About />
-      <Projects />
-    </div>
+    <Menu />
+    <Intro />
+    <About />
+    <Projects />
   </div>
 )
 
