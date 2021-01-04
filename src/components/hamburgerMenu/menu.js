@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import { MenuData } from "./menuData"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
@@ -7,7 +8,7 @@ const HamburgerIcon = () => <FontAwesomeIcon icon={faBars} />
 
 const ExitIcon = () => <FontAwesomeIcon icon={faTimes} />
 
-function Menu() {
+function Menu(props) {
   const [navbar, setNavbar] = useState(false)
 
   const showNavbar = () => setNavbar(!navbar)
@@ -36,6 +37,9 @@ function Menu() {
               </li>
             )
           })}
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
         </ul>
       </nav>
     </div>

@@ -1,14 +1,17 @@
 import React from "react"
-import Layout from "../components/layout"
+import Header from "../components/header"
 import { graphql, Link } from "gatsby"
 
-const Blog = props => {
+const BlogHome = props => {
   const postList = props.data.allMarkdownRemark
   return (
-    <div>
-      <Layout />
-      <div className=" blog">
-        <div className="layout">
+    <div className="blog">
+      <div className="blog__header">
+        <Header />
+      </div>
+
+      <div className="blog__list">
+        <div className="layout ">
           <h3 className="blog__subtitle">RECENT POSTS</h3>{" "}
           {postList.edges.map(({ node }, index) => (
             <div key={index}>
@@ -29,7 +32,7 @@ const Blog = props => {
   )
 }
 
-export default Blog
+export default BlogHome
 
 export const blogList = graphql`
   query BlogPost {

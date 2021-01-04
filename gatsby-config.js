@@ -13,6 +13,7 @@ module.exports = {
     author: `Brandi Mummery`,
     siteUrl: `https://www.brandimummery.dev`,
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

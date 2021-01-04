@@ -1,46 +1,19 @@
 .header {
+  height: 30vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding: $m-size 0;
 }
 
 .header__logo {
   color: $navy;
-  font-size: 2.5rem;
+  font-size: 3rem;
   display: flex;
   padding: $s-size;
   align-items: center;
 }
 
 .header__laptop {
-  font-size: 4rem;
+  font-size: 6rem;
   padding: $xs-size;
-}
-
-.header__nav {
-  display: flex;
-  justify-content: space-around;
-  width: 60vw;
-  align-items: center;
-  letter-spacing: 1px;
-
-  a {
-    color: $navy;
-  }
-}
-
-.header__page {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  width: 10vw;
-}
-
-.header__page:hover {
-  color: #08086d;
-  font-weight: 600;
-}
-
-.header__page:active {
-  color: #08086d;
-  font-weight: 600;
 }

@@ -8,17 +8,20 @@ import { faAddressCard, faNewspaper } from "@fortawesome/free-regular-svg-icons"
 export const MenuData = [
   {
     title: "About",
-    path: <AnchorLink href="#about">About</AnchorLink>,
+    anchorPath: <AnchorLink href="#about">About</AnchorLink>,
+    path: <Link to="/">About</Link>,
     icon: <FontAwesomeIcon icon={faAddressCard} />,
   },
   {
-    title: "Work",
-    path: <AnchorLink href="#projects">Projects</AnchorLink>,
+    title: "Projects",
+    anchorPath: <AnchorLink href="#projects">Projects</AnchorLink>,
+    path: <Link to="/">Projects</Link>,
     icon: <FontAwesomeIcon icon={faDesktop} />,
   },
-  {
-    title: "Blog",
-    path: <Link to="/blog/">Blog</Link>,
-    icon: <FontAwesomeIcon icon={faNewspaper} />,
-  },
+
+  // {
+  //   title: "Blog",
+  //   path: <Link to="/blog/">Blog</Link>,
+  //   icon: <FontAwesomeIcon icon={faNewspaper} />,
+  // },
 ]
