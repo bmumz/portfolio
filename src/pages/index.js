@@ -4,6 +4,7 @@ import Menu from "../components/hamburgerMenu/menu"
 import Intro from "../components/intro"
 import About from "../components/about"
 import Projects from "../components/projects/projects"
+import Footer from "../components/footer/footer"
 
 import "normalize.css"
 import "../styles/styles.scss"
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Intro />
     <About />
     <Projects />
+    <Footer />
   </div>
 )
 

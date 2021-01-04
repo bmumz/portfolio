@@ -14,21 +14,23 @@ export const ProjectData = [
     ),
     image: "https://i.ibb.co/RcLvrZG/ygg-portfolio.png",
     details: (
-      <ul>
-        <li className="project__list">
-          An inspirational quote generator that returns a random quote at the
-          press of a button!
-        </li>
-        <li className="project__list">Front-end: powered by Next.js.</li>
-        <li className="project__list">
-          Back-end: Created an{" "}
-          <a href="https://www.github.com/bmumz/inspirational-quotes-api">
-            open source API
-          </a>
-          , so anyone with a GitHub account can contribute their favourite
-          inspirational quotes to the project!
-        </li>
-      </ul>
+      <div className="project__details">
+        <ul>
+          <li>
+            An inspirational quote generator that returns a random quote at the
+            press of a button!
+          </li>
+          <li>Front-end: powered by Next.js.</li>
+          <li>
+            Back-end: Created an{" "}
+            <a href="https://www.github.com/bmumz/inspirational-quotes-api">
+              open source API
+            </a>
+            , so anyone with a GitHub account can contribute their favourite
+            inspirational quotes to the project!
+          </li>
+        </ul>
+      </div>
     ),
     link: "https://you-go-girl.vercel.app/",
     github: "https://github.com/bmumz/you-go-girl",
@@ -43,16 +45,16 @@ export const ProjectData = [
     ),
     image: "https://i.ibb.co/5K108xH/isl-Hor-portfolio.png",
     details: (
-      <div>
+      <div className="project__details">
         <ul>
-          <li className="project__list">
+          <li>
             Animal Crossing: New Horizons blog— complete with game data
             (critters, villagers and fossils) fetched from a RESTful API.
           </li>
-          <li className="project__list">
+          <li>
             Front-end: powered by Gatsby, while using Contentful as a CMS.
           </li>
-          <li className="project__list">
+          <li>
             Designs: header and background images created in Adobe Photoshop and
             Illustrator.
           </li>
@@ -73,16 +75,14 @@ export const ProjectData = [
     ),
     image: "https://i.ibb.co/PDfKmnD/cas-Con-portfolio.png",
     details: (
-      <div>
+      <div className="project__details">
         <ul>
-          <li className="project__list">
+          <li>
             Landing page created for a renovation and small construction
             company, showcasing the services they provide.
           </li>
-          <li className="project__list">
-            Front-end: powered by Gatsby to ensure fast load times.
-          </li>
-          <li className="project__list">
+          <li>Front-end: powered by Gatsby to ensure fast load times.</li>
+          <li>
             Back-end: server created using Node.js/Express to allow clients to
             reach out to the business directly using a contact form.
           </li>
@@ -104,17 +104,17 @@ export const ProjectData = [
     ),
     image: "https://i.ibb.co/4sd3QBb/wit-portfolio.png",
     details: (
-      <div>
+      <div className="project__details">
         <ul>
-          <li className="project__list">
+          <li>
             Single page application that uses machine learning (Clarafai API) to
             predict ingredients of food photographs submitted by users.
           </li>
-          <li className="project__list">
+          <li>
             Users can sign up/sign in to their profile to submit images,
             utilizing the apps back-end.
           </li>
-          <li className="project__list">
+          <li>
             Back-end: server created with Node.js/Express, database created with
             PostgreSQL.
           </li>

@@ -56,16 +56,15 @@
   .about__image {
     min-width: 300px;
     max-width: 300px;
-    width: 100%;
-    height: auto;
+    padding-right: $m-size;
   }
 
   .about__paragraph {
     margin-top: 0;
   }
-  .about__container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
+  // .about__container {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-evenly;
+  // }
 }

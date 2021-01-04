@@ -1,5 +1,4 @@
-import React, { useState } from "react"
-import Menu from "./hamburgerMenu/menu"
+import React from "react"
 import Image from "./image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCanadianMapleLeaf } from "@fortawesome/free-brands-svg-icons"

@@ -3,81 +3,89 @@
 }
 
 .project {
-  padding: $s-size;
+  align-items: center;
+  background: lighten($nude, 9);
+  border-radius: 10px;
+  box-shadow: -1px 5px 10px 0px rgba(0, 0, 0, 0.21);
   display: flex;
   flex-direction: column-reverse;
-  background: lighten($nude, 9);
-  padding: $m-size;
-  border-radius: 10px;
-  max-width: 100rem;
   margin: $m-size auto;
-  box-shadow: -1px 5px 10px 0px rgba(0, 0, 0, 0.21);
+  padding: $m-size;
+  width: 85vw;
+}
+
+.project__writeup {
+  min-width: 200px;
+  margin: 0 $s-size $s-size $s-size;
+}
+
+.project__title {
+  font-size: 2.3rem;
+  color: $navy;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 .project__stack {
-  align-items: flex-end;
+  margin: $xs-size 0;
   display: flex;
-  font-size: 2rem;
-  margin-bottom: 0.3rem;
+  align-items: center;
 }
 
-.project__list {
-  margin-bottom: 0.5rem;
-}
 .project__icon {
-  margin-right: 0.5rem;
+  margin-right: $s-size;
+  font-size: $l-size;
   color: #333444;
+}
+
+.project__details {
+  padding-bottom: $s-size;
+  li {
+    margin-bottom: $s-size;
+  }
 }
 
 .project__stackName {
   font-size: $m-size;
   margin: 0;
 }
-.project__title {
-  font-size: 2.3rem;
-  color: $navy;
-  margin: 0;
-  margin-top: $xs-size;
-  margin-bottom: $xs-size;
-  text-transform: uppercase;
-  font-weight: 400;
-
-  letter-spacing: 0.5px;
-}
-.project__writeup {
-  max-width: 530px;
-  align-items: center;
-  margin-top: $s-size;
-}
-
-.project__details {
-  font-size: $m-size;
-  color: #333333;
-  margin: 0;
-  margin-bottom: $l-size;
-}
 
 .project__image {
+  margin-bottom: $m-size;
   display: flex;
   align-items: center;
-  justify-items: center;
   max-width: 85vw;
-  max-height: 320px;
   height: auto;
 }
-@media (min-width: 950px) {
+
+.project__links {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1000px) {
   .project {
     display: flex;
     flex-direction: row;
     padding: 1.6rem;
-    max-width: 100rem;
+    max-width: 105rem;
   }
 
   .project__image {
-    margin: 0 0 0 $m-size;
-    img {
-      width: 50vw;
-      height: auto;
-    }
+    min-width: 400px;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .project__writeup {
+    margin: $l-size;
+  }
+
+  .project__links {
+    flex-direction: row;
+  }
+  .project__details {
+    padding-bottom: $xl-size;
   }
 }

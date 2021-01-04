@@ -8,7 +8,10 @@ const About = () => (
       <h1 className="title">About</h1>
       <div className="layout about__container">
         <div className="about__image">
-          <img src="https://www.fillmurray.com/300/300" />
+          {/* <img
+            src="https://loremflickr.com/400/300
+"
+          /> */}
         </div>
 
         <div className="about__writeup">
