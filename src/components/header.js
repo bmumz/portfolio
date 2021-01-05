@@ -1,21 +1,28 @@
 import React from "react"
-import Menu from "../components/hamburgerMenu/menu"
+import Menu from "./menu"
+import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons"
 
 const Header = () => {
   return (
     <div>
-      <div>
-        <Menu About="/" Projects="/" />
+      <div className="header__menu">
+        {" "}
+        <Menu
+          about={<Link to="/">About</Link>}
+          projects={<Link to="/">Projects</Link>}
+        />
       </div>
       <div className="header">
-        <div className="header__logo">
-          <FontAwesomeIcon icon={faLaptopCode} className="header__laptop" />
-          Brandi
-          <br />
-          Mummery.
-        </div>
+        <Link to="/">
+          <div className="header__logo">
+            <FontAwesomeIcon icon={faLaptopCode} className="header__laptop" />
+            Brandi
+            <br />
+            Mummery.
+          </div>
+        </Link>
       </div>
     </div>
   )

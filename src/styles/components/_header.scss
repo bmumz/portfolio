@@ -1,19 +1,33 @@
 .header {
-  height: 30vh;
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: $m-size 0;
+}
+
+.header__menu {
+  padding-bottom: $xl-size;
 }
 
 .header__logo {
+  padding: $l-size;
   color: $navy;
   font-size: 3rem;
   display: flex;
-  padding: $s-size;
+  padding-top: $xl-size;
   align-items: center;
+  justify-content: center;
 }
 
 .header__laptop {
   font-size: 6rem;
   padding: $xs-size;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .header {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: $m-size 0;
+  }
 }

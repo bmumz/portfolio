@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import { MenuData } from "./menuData"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 
@@ -30,13 +29,8 @@ function Menu(props) {
 
       <nav className={`menu__nav ${navbar ? "active" : "inactive"}`}>
         <ul className="menu__list">
-          {MenuData.map((menuItem, index) => {
-            return (
-              <li key={index} className="menu__item">
-                {menuItem.path}
-              </li>
-            )
-          })}
+          <li>{props.about}</li>
+          <li>{props.projects}</li>
           <li>
             <Link to="/blog">Blog</Link>
           </li>

@@ -1,17 +1,23 @@
 import React from "react"
+import Menu from "../components/menu"
 import Header from "../components/header"
+import Footer from "../components/footer/footer"
 import { graphql, Link } from "gatsby"
 
 const BlogHome = props => {
   const postList = props.data.allMarkdownRemark
   return (
-    <div className="blog">
-      <div className="blog__header">
-        <Header />
-      </div>
+    <div>
+      <div className="blog">
+        <div>
+          <Menu
+            about={<Link to="/">About</Link>}
+            projects={<Link to="/">Projects</Link>}
+          />
+          <Header />
+        </div>
 
-      <div className="blog__list">
-        <div className="layout ">
+        <div className="blog__list">
           <h3 className="blog__subtitle">RECENT POSTS</h3>{" "}
           {postList.edges.map(({ node }, index) => (
             <div key={index}>
@@ -28,6 +34,7 @@ const BlogHome = props => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
