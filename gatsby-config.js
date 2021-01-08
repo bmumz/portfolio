@@ -30,6 +30,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    "gatsby-plugin-anchor-links",
 
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

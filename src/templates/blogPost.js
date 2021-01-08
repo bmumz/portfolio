@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import Header from "../components/header"
 import Footer from "../components/footer/footer"
 
 export default function Template({ data }) {
@@ -11,13 +10,17 @@ export default function Template({ data }) {
       <div className="blog">
         <div>
           <Layout />
-          {/* <Header /> */}
         </div>
 
         <div className="blog__post layout">
           <h1 className="blog__title">{post.frontmatter.title}</h1>
           <div>
-            <span className="blog__subtitle">👩‍💻 Brandi Mummery</span>
+            <span className="blog__subtitle">
+              <span role="img" aria-label="Girl with laptop">
+                👩‍💻
+              </span>
+              Brandi Mummery
+            </span>
             <span>{post.timeToRead}</span>
           </div>
           <br />

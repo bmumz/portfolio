@@ -1,5 +1,5 @@
 import React from "react"
-import Menu from "./menu"
+import Menu from "./hamburgerMenu/menu"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons"
@@ -9,10 +9,7 @@ const Header = () => {
     <div>
       <div className="header__menu">
         {" "}
-        <Menu
-          about={<Link to="/">About</Link>}
-          projects={<Link to="/">Projects</Link>}
-        />
+        <Menu />
       </div>
       <div className="header">
         <Link to="/">

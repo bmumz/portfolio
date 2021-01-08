@@ -1,5 +1,4 @@
 import React from "react"
-import Menu from "../components/menu"
 import Header from "../components/header"
 import Footer from "../components/footer/footer"
 import { graphql, Link } from "gatsby"
@@ -10,10 +9,6 @@ const BlogHome = props => {
     <div>
       <div className="blog">
         <div>
-          <Menu
-            about={<Link to="/">About</Link>}
-            projects={<Link to="/">Projects</Link>}
-          />
           <Header />
         </div>
 

@@ -6,10 +6,11 @@
   padding: $s-size;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   outline: none;
+  border-radius: 20px;
   a {
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
     color: $navy;
   }
   a:hover {
@@ -25,4 +26,52 @@
     rgba(9, 48, 121, 1) 80%
   );
   color: $font-color;
+}
+
+.button__hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+  position: absolute;
+  margin: $s-size;
+}
+
+.button__animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 2.85rem;
+  height: 0.5rem;
+  background: $font-color;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  outline: none;
+  border: none;
+  box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.21);
+}
+
+.button__animation::before,
+.button__animation::after {
+  content: "";
+  position: absolute;
+  width: 2.85rem;
+  height: 0.5rem;
+  background: $font-color;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.21);
+}
+
+.button__animation::before {
+  transform: translateY(-10px);
+}
+
+.button__animation::after {
+  transform: translateY(10px);
 }

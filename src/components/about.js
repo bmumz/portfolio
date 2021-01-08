@@ -1,5 +1,4 @@
 import React from "react"
-import Image from "./image"
 import AboutList from "./aboutList"
 
 const About = () => (
@@ -14,12 +13,13 @@ const About = () => (
               I am a <b>self-taught</b> developer with a keen eye for design—
               thanks to my creative background in photography.
             </h3>
-            {/* <div className="about__image">
+            <div className="about__image">
               <img
                 src="https://loremflickr.com/400/300"
                 style={{ width: "400px" }}
+                alt="Brandi clickity clackiting."
               />
-            </div> */}
+            </div>
             <p>
               My first memory of coding was in the days of Myspace. I'd code my
               layout to make the music player on my page untouchable, so people
