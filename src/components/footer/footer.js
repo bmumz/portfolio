@@ -1,6 +1,5 @@
 import React from "react"
 import SocialProfile from "./socialProfile"
-import Contact from "./contact"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faLinkedin,
@@ -9,8 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 
 const Footer = () => (
-  <div>
-    <Contact />
+  <>
     <footer className="footer">
       <div className="footer__copyright">
         © {new Date().getFullYear()} Brandi Mummery
@@ -35,7 +33,7 @@ const Footer = () => (
         />
       </div>
     </footer>
-  </div>
+  </>
 )
 
 export default Footer

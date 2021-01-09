@@ -1,55 +1,62 @@
 import React from "react"
-import Header from "../components/header"
-import Footer from "../components/footer/footer"
-import { graphql, Link } from "gatsby"
+import Layout from "../components/layout"
+import { Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
-const BlogHome = props => {
-  const postList = props.data.allMarkdownRemark
-  return (
-    <div>
-      <div className="blog">
-        <div>
-          <Header />
-        </div>
-
-        <div className="blog__list">
-          <h3 className="blog__subtitle">RECENT POSTS</h3>{" "}
-          {postList.edges.map(({ node }, index) => (
-            <div key={index}>
-              <Link to={node.frontmatter.path}>
-                <h1 className="blog__title">{node.frontmatter.title}</h1>
-              </Link>
-
-              <span className="blog__date">{node.frontmatter.date}</span>
-              <Link to={node.frontmatter.path}>
-                <p className="blog__excerpt">{node.excerpt}</p>
-              </Link>
-              <hr />
-            </div>
-          ))}
-        </div>
-      </div>
-      <Footer />
-    </div>
-  )
-}
-
-export default BlogHome
-
-export const blogList = graphql`
-  query BlogPost {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            path
-            date(formatString: "MMMM DD, YYYY")
-            title
+const BlogPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              title
+              date(fromNow: true)
+            }
+            fields {
+              slug
+            }
+            id
+            excerpt(pruneLength: 250)
+            timeToRead
           }
         }
       }
     }
-  }
-`
+  `)
+
+  return (
+    <>
+      <div>
+        <div className="blog">
+          <Layout>
+            <div className="blog__list">
+              <h3 className="blog__subtitle">RECENT POSTS</h3>{" "}
+              {data.allMarkdownRemark.edges.map((edge, index) => {
+                return (
+                  <div key={index}>
+                    <Link to={edge.node.fields.slug}>
+                      <h1 className="blog__title">
+                        {edge.node.frontmatter.title}
+                      </h1>
+                    </Link>
+                    <span className="blog__date">
+                      {edge.node.frontmatter.date}
+                    </span>{" "}
+                    · <span>{edge.node.timeToRead} min read</span>
+                    <Link to={edge.node.fields.slug}>
+                      <p className="blog__excerpt">{edge.node.excerpt}</p>
+                    </Link>
+                    <hr />
+                  </div>
+                )
+              })}
+            </div>
+          </Layout>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default BlogPage

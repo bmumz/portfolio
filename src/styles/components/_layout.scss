@@ -2,3 +2,16 @@
   margin: 0 auto;
   padding: 0 $m-size $m-size;
 }
+
+.layout__main {
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 5rem;
+}
+.layout__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}

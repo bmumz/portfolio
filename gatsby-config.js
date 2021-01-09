@@ -3,12 +3,12 @@ module.exports = {
     title: `Brandi Mummery, Web Developer.`,
     description: `Web developer with a passion for UX design.`,
     keywords: [
-      "web developer",
-      "web developer Toronto",
-      "self-taught web developer",
-      "web developer for hire",
-      "Brandi Mummery",
-      "Brandi Mummery, Web Developer",
+      `web developer`,
+      `web developer Toronto`,
+      `self-taught web developer`,
+      `web developer for hire`,
+      `Brandi Mummery`,
+      `Brandi Mummery, Web Developer`,
     ],
     author: `Brandi Mummery`,
     siteUrl: `https://www.brandimummery.dev`,
@@ -20,7 +20,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages/blogPosts`,
-        name: "pages",
+        name: `pages`,
       },
     },
     {
@@ -30,8 +30,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    "gatsby-plugin-anchor-links",
-
+    `gatsby-plugin-anchor-links`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -48,7 +47,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || `none`,
         head: true,
       },
     },

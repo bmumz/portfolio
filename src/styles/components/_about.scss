@@ -5,25 +5,22 @@
     rgba(9, 9, 121, 1) 31%,
     rgba(9, 48, 121, 1) 80%
   );
-  padding: $m-size;
+  padding: $xl-size;
   p,
   h3 {
     color: $font-color;
   }
 }
 
-.about__test {
-  display: flex;
+.about__socials {
+  margin: 0 auto;
+  height: 35vh;
+  width: 70vw;
+  padding: $xl-size;
 }
+
 .about__writeup {
   padding: $s-size $m-size;
-
-  // width: 40vw;
-}
-
-.about__paragraph {
-  margin-bottom: $m-size;
-  margin-top: $s-size;
 }
 
 .about__headline {
@@ -34,7 +31,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 75vw;
 }
 
 .about__list {
@@ -72,9 +68,4 @@
   .about__paragraph {
     margin-top: 0;
   }
-  // .about__container {
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  // }
 }

@@ -1,5 +1,4 @@
 ---
-path: "/test"
 date: 2021-01-12T17:12:33.962Z
 title: "My Second Gatsby Post"
 ---

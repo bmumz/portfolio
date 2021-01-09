@@ -1,6 +1,5 @@
 ---
-path: "/hello-world"
-date: 2017-07-12T17:12:33.962Z
+date: 2017-07-12
 title: "My First Gatsby Post"
 ---
 
