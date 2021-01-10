@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Layout from "../components/layout"
 import Search from "../components/search"
+import Img from "gatsby-image"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
 
@@ -47,10 +48,15 @@ const BlogPage = props => {
           {posts.map(({ node }) => {
             const { excerpt, timeToRead } = node
             const { slug } = node.fields
-            const { tags, title, date } = node.frontmatter
+            const { tags, title, date, featuredImage } = node.frontmatter
 
             return (
               <div key={slug}>
+                <div className="blogtest">
+                  {featuredImage && (
+                    <Img fluid={featuredImage.childImageSharp.fluid} />
+                  )}
+                </div>
                 <Link to={slug}>
                   <h1 className="blog__title">{title}</h1>
                 </Link>
@@ -90,6 +96,13 @@ export const pageQuery = graphql`
             description
             date(fromNow: true)
             tags
+            featuredImage {
+              childImageSharp {
+                fluid(quality: 100, maxWidth: 250) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           fields {
             slug
