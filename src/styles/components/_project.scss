@@ -11,7 +11,7 @@
   flex-direction: column-reverse;
   margin: $m-size auto;
   padding: $m-size;
-  width: 85vw;
+  width: 90vw;
 }
 
 .project__writeup {
@@ -62,6 +62,9 @@
 .project__links {
   display: flex;
   flex-direction: column;
+}
+.project__github {
+  margin-right: $s-size;
 }
 
 @media (min-width: 1000px) {

@@ -40,7 +40,7 @@ button {
 }
 
 h1 {
-  color: $font-color;
+  color: $less-white;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
@@ -80,8 +80,12 @@ hr {
 }
 .title {
   text-align: center;
-  color: $font-color;
+  color: $less-white;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 400;
+}
+
+::placeholder {
+  color: rgb(138, 138, 138);
 }

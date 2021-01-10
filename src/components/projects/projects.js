@@ -17,7 +17,7 @@ const Projects = () => (
             <span className="project__links">
               <a
                 href={project.link}
-                className="button project__link"
+                className="button"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -27,11 +27,12 @@ const Projects = () => (
 
               <a
                 href={project.github}
-                className="button project__link"
+                className="button"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon icon={faGithub} /> Source Code
+                <FontAwesomeIcon icon={faGithub} className="project__github" />{" "}
+                Source Code
               </a>
             </span>
           </div>

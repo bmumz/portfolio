@@ -10,8 +10,11 @@
   position: relative;
   padding-bottom: 5rem;
 }
-.layout__footer {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
+
+@media (min-width: $desktop-breakpoint) {
+  .layout__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+  }
 }

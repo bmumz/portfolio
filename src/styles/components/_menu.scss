@@ -52,7 +52,7 @@
   width: 100vw;
   height: 100vh;
   a {
-    color: $font-color;
+    color: $less-white;
   }
 }
 
@@ -77,9 +77,6 @@
     font-size: 2.2rem;
   }
   .menu__list {
-    // position: absolute;
-    // left: 0;
-    // top: 0;
     list-style: none;
     font-size: 2.2rem;
     text-transform: uppercase;
@@ -90,7 +87,7 @@
     width: 100vw;
     height: 8rem;
     a {
-      color: $font-color;
+      color: $less-white;
     }
   }
 }

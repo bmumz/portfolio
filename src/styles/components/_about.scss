@@ -8,7 +8,7 @@
   padding: $xl-size;
   p,
   h3 {
-    color: $font-color;
+    color: $less-white;
   }
 }
 
@@ -38,7 +38,7 @@
   margin-left: $m-size;
 }
 .about__title {
-  color: $font-color;
+  color: $less-white;
   font-size: 2rem;
   margin-bottom: $s-size;
   margin-top: $m-size;
@@ -46,7 +46,7 @@
 }
 
 .about__caption {
-  color: $font-color;
+  color: $less-white;
   font-size: $m-size;
   align-items: center;
 }

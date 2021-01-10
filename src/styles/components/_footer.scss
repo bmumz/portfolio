@@ -18,17 +18,17 @@
 .footer__social {
   font-size: $l-size;
   margin: $s-size;
-  color: darken($font-color, 15);
+  color: darken($less-white, 15);
 }
 
 .footer__social:hover {
-  color: $font-color;
+  color: $less-white;
 }
 
 .footer__copyright {
-  color: $font-color;
+  color: $less-white;
   font-weight: 100;
-  color: darken($font-color, 15);
+  color: darken($less-white, 15);
   padding: $m-size;
 }
 
