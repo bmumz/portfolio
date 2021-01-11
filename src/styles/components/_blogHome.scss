@@ -8,6 +8,18 @@
 .blog__list,
 .blog__post {
   padding: $m-size;
+  h1 {
+    color: $navy;
+    margin: 0;
+  }
+  h3 {
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+    font-weight: 100;
+  }
 }
 
 .blog__nav {
@@ -71,10 +83,6 @@
   color: $almost-black;
   padding-top: $s-size;
 }
-.blogtest {
-  flex: 1;
-  max-width: 250px;
-}
 
 .blog__card {
   display: flex;
@@ -96,12 +104,6 @@
   background-color: $grey;
   margin-right: $s-size;
   border-radius: 5px;
-}
-
-.content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 @media (min-width: $desktop-breakpoint) {

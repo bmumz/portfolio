@@ -1,7 +1,6 @@
 import React, { useState } from "react"
-import Layout from "../components/layout"
-import Search from "../components/search"
-import Img from "gatsby-image"
+import Layout from "../components/ui/layout"
+import Search from "../components/ui/search"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
 
@@ -20,12 +19,15 @@ const BlogPage = props => {
     const query = event.target.value
 
     const filteredData = allPosts.filter(post => {
-      const { title, tags } = post.node.frontmatter
+      const { title, description, tags } = post.node.frontmatter
+
       const searchValue = query.toLowerCase()
       const titleValue = title.toLowerCase()
+      const descriptionValue = description.toLowerCase()
 
       return (
         titleValue.includes(searchValue) ||
+        descriptionValue.includes(searchValue) ||
         (tags && tags.join(" ").toLowerCase().includes(searchValue))
       )
     })
@@ -46,24 +48,19 @@ const BlogPage = props => {
         <Search onChange={handleSearchQuery} />
         <div className="blog__list">
           {posts.map(({ node }) => {
-            const { excerpt, timeToRead } = node
+            const { timeToRead } = node
             const { slug } = node.fields
-            const { tags, title, date, featuredImage } = node.frontmatter
+            const { tags, title, date, description } = node.frontmatter
 
             return (
               <div key={slug}>
-                <div className="blogtest">
-                  {featuredImage && (
-                    <Img fluid={featuredImage.childImageSharp.fluid} />
-                  )}
-                </div>
                 <Link to={slug}>
                   <h1 className="blog__title">{title}</h1>
                 </Link>
                 <span className="blog__date">{date}</span> ·{" "}
                 <span>{timeToRead} min read</span>
                 <Link to={slug}>
-                  <p className="blog__excerpt">{excerpt}</p>
+                  <h3 className="blog__excerpt">{description}</h3>
                 </Link>
                 <div className="blog__tags">
                   {tags.map((tag, index) => {
@@ -93,16 +90,9 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
-            description
             date(fromNow: true)
+            description
             tags
-            featuredImage {
-              childImageSharp {
-                fluid(quality: 100, maxWidth: 250) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
           fields {
             slug

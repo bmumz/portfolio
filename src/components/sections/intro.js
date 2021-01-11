@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "./image"
+import Image from "../image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCanadianMapleLeaf } from "@fortawesome/free-brands-svg-icons"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"

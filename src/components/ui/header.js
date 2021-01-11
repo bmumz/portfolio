@@ -1,5 +1,6 @@
 import React from "react"
-import Menu from "./hamburgerMenu/menu"
+import Menu from "././hamburgerMenu/menu"
+
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons"

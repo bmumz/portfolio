@@ -1,11 +1,13 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import Layout from "../components/layout"
+import Layout from "../components/ui/layout"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faChevronCircleRight,
   faChevronCircleLeft,
+  faLongArrowAltLeft,
+  faLongArrowAltRight,
 } from "@fortawesome/free-solid-svg-icons"
 
 export const query = graphql`
@@ -14,6 +16,7 @@ export const query = graphql`
       frontmatter {
         title
         date(fromNow: true)
+        description
         tags
         featuredImage {
           childImageSharp {
@@ -42,6 +45,7 @@ const Blog = ({ data, pageContext }) => {
       ? {
           url: `/blog/${next.fields.slug}`,
           title: next.frontmatter.title,
+          icon: <FontAwesomeIcon icon={faLongArrowAltRight} />,
         }
       : ""
 
@@ -50,6 +54,7 @@ const Blog = ({ data, pageContext }) => {
       ? {
           url: `/blog/${prev.fields.slug}`,
           title: prev.frontmatter.title,
+          icon: <FontAwesomeIcon icon={faLongArrowAltLeft} />,
         }
       : ""
 
@@ -61,10 +66,13 @@ const Blog = ({ data, pageContext }) => {
       <Layout>
         <div className="blog">
           <div className="blog__post">
-            <h1 className="blog__title">{blogData.title}</h1>
-            {blogData.featuredImage && (
-              <Img fluid={blogData.featuredImage.childImageSharp.fluid} />
-            )}
+            <h1>{blogData.title}</h1>
+
+            <div>
+              {" "}
+              <span className="blog__date">{blogData.date}</span> ·{" "}
+              <span>{post.timeToRead} min read</span>
+            </div>
             <div className="blog__tags">
               {blogData.tags.map((tag, index) => (
                 <div key={index} className="blog__tag">
@@ -72,11 +80,10 @@ const Blog = ({ data, pageContext }) => {
                 </div>
               ))}
             </div>
-            <div>
-              {" "}
-              <span className="blog__date">{blogData.date}</span> ·{" "}
-              <span>{post.timeToRead} min read</span>
-            </div>
+
+            {blogData.featuredImage && (
+              <Img fluid={blogData.featuredImage.childImageSharp.fluid} />
+            )}
 
             <div
               className="blog__body"
@@ -85,30 +92,27 @@ const Blog = ({ data, pageContext }) => {
             <div className="blog__nav">
               {prevData && (
                 <div className="blog__prev">
-                  <Link to={prevData.url}>
-                    <FontAwesomeIcon
-                      icon={faChevronCircleLeft}
-                      className="blog__icon"
-                    />
-                  </Link>
-                  Previous:
-                  <Link to={prevData.url}>
-                    <h3>{prevData.title}</h3>
-                  </Link>
+                  <span>
+                    <p>Previous Post:</p>
+                    <Link to={prevData.url}>
+                      <h3>
+                        {prevData.icon} {prevData.title}
+                      </h3>
+                    </Link>
+                  </span>
                 </div>
               )}
 
               {nextData && (
                 <div className="blog__next">
-                  <span>Next:</span>
-
-                  <Link to={nextData.url}>
-                    <FontAwesomeIcon
-                      icon={faChevronCircleRight}
-                      className="blog__icon"
-                    />
-                    <h3>{nextData.title}</h3>{" "}
-                  </Link>
+                  <span>
+                    <p>Next Post:</p>
+                    <Link to={nextData.url}>
+                      <h3>
+                        {nextData.icon} {nextData.title}
+                      </h3>
+                    </Link>
+                  </span>
                 </div>
               )}
             </div>
