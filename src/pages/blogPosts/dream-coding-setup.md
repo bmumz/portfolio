@@ -12,21 +12,75 @@ If 2020 taught me anything, it's the importance of creating the best out of what
 
 ## The Desk
 
+Desktop: Walnut live edge.
+Legs: black iron pipes.
+
 Overall, the desk cost around **\$400**. But there's more than enough live edge leftover to make another project- I'm thinking a side table or maybe some shelves? To be determined...
 
 <br/>
 
 ### Materials
 
-- -live edge slab **\$200**
-- -black iron pipes **\$130**
-- -Polyx Oil **\$30**
-- -Minwax **\$13**
+- -live edge slab (walnut)
+- -Polyx Oil - clear satin
+- -black iron pipes
+- -Minwax Paste Finishing Wax
 - -Sandpaper (grits 60-180)
 
 <br/>
 
+### Step 1: Prepping the live edge...
+
 <br/>
+
+The first step was to decide which piece of the wood to use, cut it to size (square it if necessary. My piece was pretty square already, and I wanted to keep both live edges, so I skipped this), and fill any holes in with epoxy. Since my dad purchased the slab for me as a Christmas present, he took care of this step!
+
+<br/>
+
+The slab we chose didn't have any deep imperfections, which was great. A little 2 part epoxy did the trick to fill the holes in.
+
+<br />
+
+#### Sanding
+
+After the slab was cut to size (40" W x 23" D), it was time to start sanding. The amount of sanding you have to do depends on which finish you choose. We chose to use Polyx Oil, which was a little pricier than a linseed oil or polyutherene finish, but...
+
+<br/>
+
+- -you only had to sand to 180 grit (as opposed to 400+)
+- -no sanding between coats!
+- -has a nice, natural looking finish, as opposed to a thick plasticy one.
+- -isn't super smelly.
+
+#### Finishing
+
+After sanding, we wiped all the dust off with a dry cotton rag and cracked the Polyx Oil open. It is important to finish the live edge in a dry, relatively warm temperature. We did this in a car trailer with a heater.
+
+<br/>
+
+A little Polyx oil goes a long way! Rub it into the wood in figure-8 motions. I did this for about 15 minutes to ensure it was completely worked into the wood. Let dry for around 8 hours before applying the second coat. I did one side at a time to ensure proper drying.
+
+<br />
+
+### Step 2: Building the legs...
+
+<br/>
+
+Before lockdown, we were able to go into Home Depot and build out the legs in store to make sure we were getting the right pieces.
+
+#### Things we took into accout:
+
+- -height of desk: 30" tall total, so the legs should be around 28".
+- -structural support in the depth and the width of the desk.
+- -finishing the pipes so they wouldn't be greasy, and wouldn't rust.
+
+#### Pieces used:
+
+- -8 x floor flanges (4 for the floor, 4 to attach legs to desk)
+- -2 x 12" pieces (for structural support in the depth)
+- -2 x 18" pieces
+- -1 x 24" (for structural support in the width)
+- 4 x 3" pieces (for feet)
 
 ## The Setup
 

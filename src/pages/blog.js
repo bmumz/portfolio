@@ -1,6 +1,9 @@
 import React, { useState } from "react"
 import Layout from "../components/ui/layout"
 import Search from "../components/ui/search"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faClock } from "@fortawesome/free-regular-svg-icons"
+import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
 
@@ -58,9 +61,14 @@ const BlogPage = props => {
                   <h1 className="blog__title">{title}</h1>
                 </Link>
                 <span className="blog__date">{date}</span> ·{" "}
-                <span>{timeToRead} min read</span>
+                <span>
+                  <FontAwesomeIcon icon={faClock} /> {timeToRead} min read
+                </span>
                 <Link to={slug}>
                   <h3 className="blog__excerpt">{description}</h3>
+                  <span>
+                    Read more <FontAwesomeIcon icon={faLongArrowAltRight} />
+                  </span>
                 </Link>
                 <div className="blog__tags">
                   {tags.map((tag, index) => {
@@ -71,7 +79,6 @@ const BlogPage = props => {
                     )
                   })}
                 </div>
-                <hr />
               </div>
             )
           })}

@@ -4,11 +4,10 @@ import Img from "gatsby-image"
 import Layout from "../components/ui/layout"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-  faChevronCircleRight,
-  faChevronCircleLeft,
   faLongArrowAltLeft,
   faLongArrowAltRight,
 } from "@fortawesome/free-solid-svg-icons"
+import { faClock } from "@fortawesome/free-regular-svg-icons"
 
 export const query = graphql`
   query BlogPost($slug: String) {
@@ -58,9 +57,6 @@ const Blog = ({ data, pageContext }) => {
         }
       : ""
 
-  console.log("next", nextData.url)
-  console.log("prev", prevData.url)
-
   return (
     <>
       <Layout>
@@ -71,7 +67,9 @@ const Blog = ({ data, pageContext }) => {
             <div>
               {" "}
               <span className="blog__date">{blogData.date}</span> ·{" "}
-              <span>{post.timeToRead} min read</span>
+              <span>
+                <FontAwesomeIcon icon={faClock} /> {post.timeToRead} min read
+              </span>
             </div>
             <div className="blog__tags">
               {blogData.tags.map((tag, index) => (
@@ -82,7 +80,10 @@ const Blog = ({ data, pageContext }) => {
             </div>
 
             {blogData.featuredImage && (
-              <Img fluid={blogData.featuredImage.childImageSharp.fluid} />
+              <Img
+                fluid={blogData.featuredImage.childImageSharp.fluid}
+                imgStyle={{ borderRadius: "5px" }}
+              />
             )}
 
             <div

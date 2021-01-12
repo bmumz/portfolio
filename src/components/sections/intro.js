@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "../image"
+import HeadshotImage from "../ui/imageQueries/headshot"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCanadianMapleLeaf } from "@fortawesome/free-brands-svg-icons"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
@@ -9,7 +9,7 @@ const Intro = () => {
     <div className="intro">
       <div className="intro__container">
         <div className="intro__img">
-          <Image />
+          <HeadshotImage />
         </div>
         <div className="intro__blurb">
           <span>

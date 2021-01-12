@@ -5,18 +5,46 @@
     rgba(9, 9, 121, 1) 31%,
     rgba(9, 48, 121, 1) 80%
   );
-  padding: $xl-size;
+
+  h1 {
+    padding-top: $xl-size;
+  }
   p,
   h3 {
     color: $less-white;
   }
 }
 
-.about__socials {
-  margin: 0 auto;
-  height: 35vh;
-  width: 70vw;
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: $xl-size;
+  width: 90vw;
+}
+
+.about__tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #111111;
+}
+
+.about__icon {
+  font-size: $l-size;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+}
+
+.about__tag {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: $grey;
+  margin: 0.25rem;
+  border-radius: 5px;
+  padding-right: 0.95rem;
 }
 
 .about__writeup {
@@ -25,12 +53,6 @@
 
 .about__headline {
   font-size: 2rem;
-}
-
-.about__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .about__list {
@@ -52,11 +74,8 @@
 }
 
 @media (min-width: 875px) {
-  .about__li {
-    list-style: none;
-    font-size: 2rem;
-    margin-top: $m-size;
-    margin-right: $m-size;
+  .about__container {
+    width: 75vw;
   }
 
   .about__image {
@@ -67,5 +86,9 @@
 
   .about__paragraph {
     margin-top: 0;
+  }
+
+  .about__tags {
+    padding: 0 12%;
   }
 }

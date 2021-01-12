@@ -1,8 +1,8 @@
 import React from "react"
 import Seo from "../components/ui/seo"
-import Menu from "../components/hamburgerMenu/menu"
+import Menu from "../components/ui/hamburgerMenu/menu"
 import Intro from "../components/sections/intro"
-import About from "../components/sections/about"
+import About from "../components/sections/about/about"
 import Projects from "../components/sections/projects/projects"
 import Footer from "../components/ui/footer/footer"
 
