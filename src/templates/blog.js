@@ -52,7 +52,7 @@ const Blog = ({ data, pageContext }) => {
     prev !== null
       ? {
           url: `/blog/${prev.fields.slug}`,
-          title: prev.frontmatter.title.substring(0, 25),
+          title: prev.frontmatter.title.substring(0, 2),
           icon: <FontAwesomeIcon icon={faLongArrowAltLeft} />,
         }
       : ""
@@ -97,7 +97,7 @@ const Blog = ({ data, pageContext }) => {
                     <p>Previous Post:</p>
                     <Link to={prevData.url}>
                       <h3>
-                        {prevData.icon} {prevData.title}...
+                        {prevData.icon} {prevData.title}
                       </h3>
                     </Link>
                   </span>

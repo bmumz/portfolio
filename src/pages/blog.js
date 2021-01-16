@@ -67,7 +67,7 @@ const BlogPage = props => {
                 <Link to={slug}>
                   <h3 className="blog__excerpt">
                     {description}{" "}
-                    <span className="blog__test">
+                    <span>
                       Read more <FontAwesomeIcon icon={faLongArrowAltRight} />
                     </span>
                   </h3>

@@ -8,6 +8,12 @@
   display: flex;
   align-items: center;
   padding: $s-size;
+  span {
+    color: $less-white;
+  }
+  span:hover {
+    color: $less-white;
+  }
 }
 .contact__socials {
   padding-top: $xl-size;
