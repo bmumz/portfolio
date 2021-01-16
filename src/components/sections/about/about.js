@@ -1,5 +1,6 @@
 import React from "react"
 import { AboutList } from "./aboutList"
+import Contact from "../contact/contact"
 
 const About = () => (
   <>
@@ -23,7 +24,8 @@ const About = () => (
             <span role="img" aria-label="girl crossing arms">
               🙅‍♀️
             </span>
-            !
+            ! You'll usually find me dabbling around in Adobe XD and Photoshop
+            before I start the coding process.
           </h3>
           <h3>
             {" "}
@@ -47,40 +49,8 @@ const About = () => (
               </span>
             ))}
           </div>
-
-          {/* <p>
-            My first memory of coding was in the days of Myspace. I'd code my
-            layout to make the music player on my page untouchable, so people
-            were forced to listen to my favorite music (if you can even call it
-            that...)
-          </p>
-          <br />
-          <p>
-            Now, I understand this is not a good practice. I focus on ensuring
-            web applications I deliver are built around accessibility,
-            scalability and reusability.
-          </p>
-          <h3 className="about__headline">
-            I enjoy identifying and solving problems to build clean, creative,
-            and user-friendly experiences with a 3 step process:
-          </h3>{" "} */}
-          {/* <div className="about__list">
-            <AboutList
-              listItem="#1 Research"
-              listCaption="What specific issues need to be addressed? What value will it
-              provide?"
-            />
-            <AboutList
-              listItem="#2 Design"
-              listCaption="Create prototypes designs/wireframes, keeping research in mind."
-            />
-            <AboutList
-              listItem="#3 Develop"
-              listCaption=" Utilize research and designs to produce a shiny new finished
-              project!"
-            />
-          </div> */}
         </div>
+        <Contact />
       </div>
     </div>{" "}
   </>

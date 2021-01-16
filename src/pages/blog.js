@@ -65,10 +65,12 @@ const BlogPage = props => {
                   <FontAwesomeIcon icon={faClock} /> {timeToRead} min read
                 </span>
                 <Link to={slug}>
-                  <h3 className="blog__excerpt">{description}</h3>
-                  <span>
-                    Read more <FontAwesomeIcon icon={faLongArrowAltRight} />
-                  </span>
+                  <h3 className="blog__excerpt">
+                    {description}{" "}
+                    <span className="blog__test">
+                      Read more <FontAwesomeIcon icon={faLongArrowAltRight} />
+                    </span>
+                  </h3>
                 </Link>
                 <div className="blog__tags">
                   {tags.map((tag, index) => {

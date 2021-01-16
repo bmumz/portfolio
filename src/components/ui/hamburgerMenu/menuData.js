@@ -1,9 +1,18 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faDesktop, faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons"
+import {
+  faDesktop,
+  faEnvelopeOpen,
+  faHome,
+} from "@fortawesome/free-solid-svg-icons"
 import { faAddressCard, faNewspaper } from "@fortawesome/free-regular-svg-icons"
 
 export const MenuData = [
+  {
+    title: "Home",
+    path: "/",
+    icon: <FontAwesomeIcon icon={faHome} />,
+  },
   {
     title: "About",
     path: "/#about",
@@ -15,13 +24,13 @@ export const MenuData = [
     icon: <FontAwesomeIcon icon={faDesktop} />,
   },
   {
+    title: "Contact",
+    path: "/#contact",
+    icon: <FontAwesomeIcon icon={faEnvelopeOpen} />,
+  },
+  {
     title: "Blog",
     path: "/blog",
     icon: <FontAwesomeIcon icon={faNewspaper} />,
-  },
-  {
-    title: "Contact",
-    path: "/contact",
-    icon: <FontAwesomeIcon icon={faEnvelopeOpen} />,
   },
 ]

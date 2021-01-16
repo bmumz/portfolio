@@ -55,7 +55,7 @@ export const ProjectData = [
             Front-end: powered by Gatsby, while using Contentful as a CMS.
           </li>
           <li>
-            Designs: header and background images created in Adobe Photoshop and
+            Design: header and background images created in Adobe Photoshop and
             Illustrator.
           </li>
         </ul>

@@ -65,6 +65,27 @@ module.exports = {
         head: true,
       },
     },
+    {
+      resolve: `gatsby-source-twitter`,
+      options: {
+        credentials: {
+          CONSUMER_KEY: process.env.TWITTER_CONSUMER_KEY,
+          CONSUMER_SECRET: process.env.TWITTER_CONSUMER_SECRET,
+          BEARER_TOKEN: process.env.TWITTER_BEARER_TOKEN,
+        },
+        queries: {
+          fetchTimeline: {
+            endpoint: "statuses/user_timeline",
+            params: {
+              screen_name: "brandiCodes",
+              include_rts: false,
+              exclude_replies: true,
+              tweet_mode: "extended",
+            },
+          },
+        },
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-twitter`,
   ],

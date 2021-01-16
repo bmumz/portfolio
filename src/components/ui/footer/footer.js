@@ -1,11 +1,5 @@
 import React from "react"
-import SocialProfile from "./socialProfile"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faLinkedin,
-  faAngellist,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons"
+import { ContactData } from "../../sections/contact/contactData"
 
 const Footer = () => (
   <>
@@ -15,22 +9,13 @@ const Footer = () => (
       </div>
 
       <div className="footer__socials">
-        <SocialProfile
-          profileLink="https://www.github.com/bmumz"
-          icon={<FontAwesomeIcon icon={faGithub} className="footer__social" />}
-        />
-        <SocialProfile
-          profileLink="https://www.linkedin.com/in/brandimummery"
-          icon={
-            <FontAwesomeIcon icon={faLinkedin} className="footer__social" />
-          }
-        />
-        <SocialProfile
-          profileLink="https://angel.co/u/brandi-mummery"
-          icon={
-            <FontAwesomeIcon icon={faAngellist} className="footer__social" />
-          }
-        />
+        {ContactData.map((social, index) => (
+          <span key={index}>
+            <a href={social.url} className="footer__social">
+              {social.icon}
+            </a>
+          </span>
+        ))}
       </div>
     </footer>
   </>

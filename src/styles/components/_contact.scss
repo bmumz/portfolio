@@ -1,16 +1,32 @@
 .contact {
-  background: lighten($nude, 9);
-  border-radius: 10px;
-  box-shadow: -1px 5px 10px 0px rgba(0, 0, 0, 0.21);
   margin: 0 auto;
   max-width: 90vw;
+  color: $less-white;
 }
 
-.contact__twitter {
-  a {
-    color: $less-white;
-  }
-  padding: $l-size;
+.contact__container {
+  display: flex;
+  align-items: center;
+  padding: $s-size;
+}
+.contact__socials {
+  padding-top: $xl-size;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__method {
+  font-size: $l-size;
+  padding-right: $m-size;
+}
+
+.contact__icon {
+  color: darken($less-white, 15);
+  font-size: $xl-size;
+}
+
+.contact__icon:hover {
+  color: $less-white;
 }
 
 @media (min-width: $desktop-breakpoint) {
@@ -20,6 +36,6 @@
   .contact__info {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
   }
 }

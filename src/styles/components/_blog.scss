@@ -87,6 +87,12 @@
 .blog__excerpt {
   color: $almost-black;
   padding-top: $s-size;
+  span {
+    color: $less-black;
+  }
+  span:hover {
+    color: $almost-black;
+  }
 }
 
 .blog__card {

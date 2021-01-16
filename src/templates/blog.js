@@ -43,7 +43,7 @@ const Blog = ({ data, pageContext }) => {
     next !== null
       ? {
           url: `/blog/${next.fields.slug}`,
-          title: next.frontmatter.title,
+          title: next.frontmatter.title.substring(0, 25),
           icon: <FontAwesomeIcon icon={faLongArrowAltRight} />,
         }
       : ""
@@ -52,7 +52,7 @@ const Blog = ({ data, pageContext }) => {
     prev !== null
       ? {
           url: `/blog/${prev.fields.slug}`,
-          title: prev.frontmatter.title,
+          title: prev.frontmatter.title.substring(0, 25),
           icon: <FontAwesomeIcon icon={faLongArrowAltLeft} />,
         }
       : ""
@@ -97,7 +97,7 @@ const Blog = ({ data, pageContext }) => {
                     <p>Previous Post:</p>
                     <Link to={prevData.url}>
                       <h3>
-                        {prevData.icon} {prevData.title}
+                        {prevData.icon} {prevData.title}...
                       </h3>
                     </Link>
                   </span>
@@ -110,7 +110,7 @@ const Blog = ({ data, pageContext }) => {
                     <p>Next Post:</p>
                     <Link to={nextData.url}>
                       <h3>
-                        {nextData.icon} {nextData.title}
+                        {nextData.icon} {nextData.title}...
                       </h3>
                     </Link>
                   </span>
