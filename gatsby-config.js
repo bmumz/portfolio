@@ -88,5 +88,6 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-twitter`,
+    `gatsby-plugin-fontawesome-css`,
   ],
 }
