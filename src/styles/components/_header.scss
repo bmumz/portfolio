@@ -16,12 +16,16 @@
   padding-top: $xl-size;
   align-items: center;
   justify-content: center;
+  span {
+    font-size: 6rem;
+    padding: $xs-size;
+  }
 }
 
-.header__laptop {
-  font-size: 6rem;
-  padding: $xs-size;
-}
+// .header__laptop {
+//   font-size: 6rem;
+//   padding: $xs-size;
+// }
 
 @media (min-width: $desktop-breakpoint) {
   .header {

@@ -15,7 +15,9 @@ const Header = () => {
       <div className="header">
         <Link to="/">
           <div className="header__logo">
-            <FontAwesomeIcon icon={faLaptopCode} className="header__laptop" />
+            <span>
+              <FontAwesomeIcon icon={faLaptopCode} />
+            </span>
             Brandi
             <br />
             Mummery.

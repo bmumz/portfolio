@@ -15,6 +15,8 @@ module.exports = {
   },
   flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
+    `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -86,8 +88,7 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-sass`,
+
     `gatsby-plugin-twitter`,
-    `gatsby-plugin-fontawesome-css`,
   ],
 }

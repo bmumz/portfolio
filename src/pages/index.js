@@ -5,7 +5,6 @@ import Intro from "../components/sections/intro"
 import About from "../components/sections/about/about"
 import Projects from "../components/sections/projects/projects"
 import Footer from "../components/ui/footer/footer"
-
 import "normalize.css"
 import "../styles/styles.scss"
 
