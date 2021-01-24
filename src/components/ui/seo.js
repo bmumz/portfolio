@@ -38,7 +38,7 @@ const SEO = ({ keywords }) => {
         name="url"
         content={data.site.siteMetadata.siteUrl}
       />
-      <meta property="og:image" content="https://i.ibb.co/xJMT7z5/devimg.png" />
+      <meta property="og:image" content="https://i.ibb.co/D4hwHhd/devImg.png" />
     </Helmet>
   )
 }

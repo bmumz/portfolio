@@ -26,13 +26,6 @@ const Contact = () => (
 
           <span>brandimummery@gmail.com</span>
         </div>
-        <div className="contact__container">
-          <span className="contact__method">
-            <FontAwesomeIcon icon={faMobileAlt} />
-          </span>
-
-          <span>647-308-1536</span>
-        </div>
       </h3>
     </div>
   </>

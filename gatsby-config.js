@@ -1,8 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Brandi Mummery, Web Developer.`,
-    description: `Web developer with a passion for UX design.`,
+    title: `Brandi Mummery, Software Developer.`,
+    description: `Software developer with a passion for UX design.`,
     keywords: [
+      `software developer`,
+      `software developer Toronto`,
+      `self-taught software developer`,
+      `software developer for hire`,
+      `Brandi Mummery`,
+      `Brandi Mummery, software Developer`,
       `web developer`,
       `web developer Toronto`,
       `self-taught web developer`,

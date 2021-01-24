@@ -16,7 +16,7 @@ const Intro = () => {
             Hi, I'm <span className="intro__name">Brandi Mummery</span>—
             <br />
           </span>
-          <span> a web developer with a passion for UX design.</span>
+          <span> a software developer with a passion for UX design.</span>
 
           <span className="intro__icons">
             <FontAwesomeIcon
