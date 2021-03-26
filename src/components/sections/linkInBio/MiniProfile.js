@@ -23,7 +23,9 @@ const MiniProfile = () => (
         <FontAwesomeIcon icon={faTwitterSquare} className="mini-profile-icon" />{" "}
         <a href="https://www.twitter.com/brandiCodes"> @brandiCodes</a>
       </span>
-      <h3>Lover of coffee, coding, and my cat.</h3>
+      <span className="mini-profile-bio">
+        Lover of coffee, coding, and my cat.
+      </span>
     </div>
   </>
 )

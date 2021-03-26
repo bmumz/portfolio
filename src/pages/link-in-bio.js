@@ -14,7 +14,7 @@ const LinkInBio = () => {
       <Layout>
         <div className="link-in-bio">
           <MiniProfile />
-          <hr />
+
           <h3 className="link-type">Learn to code for free!</h3>
           {Resources.map((link, index) => (
             <span key={index}>
