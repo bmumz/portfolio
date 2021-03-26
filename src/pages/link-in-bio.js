@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/ui/layout"
-import MiniProfile from "../components/ui/linkInBio/MiniProfile"
-import Link from "../components/ui/linkInBio/Link"
+import MiniProfile from "../components/sections/linkInBio/MiniProfile"
+import Link from "../components/sections/linkInBio/Link"
 import {
   Resources,
   OpenSource,
   BlogPosts,
-} from "../components/ui/linkInBio/data"
+} from "../components/sections/linkInBio/data"
 
 const LinkInBio = () => {
   return (

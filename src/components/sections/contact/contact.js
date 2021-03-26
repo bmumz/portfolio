@@ -1,7 +1,6 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons"
-import { faMobileAlt } from "@fortawesome/free-solid-svg-icons"
 import { ContactData } from "./contactData"
 
 const Contact = () => (

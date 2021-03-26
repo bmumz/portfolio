@@ -1,5 +1,5 @@
 import React from "react"
-import HeadshotImage from "../imageQueries/headshot"
+import HeadshotImage from "../../ui/imageQueries/headshot"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faInstagramSquare,
