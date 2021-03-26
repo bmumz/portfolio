@@ -1,0 +1,55 @@
+.link-in-bio {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+}
+.link-type {
+  display: flex;
+  color: $navy;
+  font-weight: bold;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: $l-size 0 $xs-size 0;
+  text-align: center;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  width: 90vw;
+  background: rgba(9, 9, 121, 20);
+  background: linear-gradient(
+    54deg,
+    rgba(9, 9, 121, 1) 31%,
+    rgba(9, 48, 121, 1) 80%
+  );
+  padding: $s-size;
+  margin: $xs-size;
+  display: flex;
+  justify-content: center;
+  border-radius: $l-size;
+  text-align: center;
+  h3 {
+    color: $less-white;
+    text-transform: capitalize;
+    margin: $xs-size;
+  }
+}
+
+.link:hover {
+  background: lighten($navy, 4);
+}
+
+@media (min-width: $desktop-breakpoint) {
+  // .link {
+  //   width: 65vw;
+  // }
+  .link-in-bio {
+    width: 65vw;
+  }
+}
