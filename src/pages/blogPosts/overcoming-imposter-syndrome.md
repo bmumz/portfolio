@@ -92,6 +92,6 @@ This holds you accountable. If you start talking to fellow developers and joinin
 
 ## Resources
 
-- -<a href="https://podcasts.apple.com/jo/podcast/imposter-syndrome-are-you-self-sabotaging/id1505520809?i=1000480936049" target="_blank"
+- <a href="https://podcasts.apple.com/jo/podcast/imposter-syndrome-are-you-self-sabotaging/id1505520809?i=1000480936049" target="_blank"
                     rel="noreferrer"> Imposter Syndrome: Are you self-sabotaging?</a> • Straight Shooter Recruiter (podcast episode)
-- -<a href="https://shopcatalog.com/product/the-mountain-is-you/" target="_blank" rel="noreferrer"> The Mountain is You</a> • Brianna Wiest (book)
+- <a href="https://shopcatalog.com/product/the-mountain-is-you/" target="_blank" rel="noreferrer"> The Mountain is You</a> • Brianna Wiest (book)
