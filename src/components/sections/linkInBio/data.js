@@ -15,6 +15,11 @@ export const Resources = [
     title: "Harvard CS50",
     path: "https://cs50.harvard.edu/x/2021/",
   },
+  {
+    title: "Notion Weekly Agenda Template by Marie Poulin",
+    path:
+      "https://www.notion.so/Weekly-agenda-9e197cdf88dc4d3abf798b999ebce40a",
+  },
 ]
 
 export const OpenSource = [
