@@ -68,9 +68,8 @@
   transition: opacity 2s ease-in-out, transform 0.5s ease-in-out,
     visibility 0.5s;
 }
-.menu__item:hover,
-.menu__animation:hover {
-  transform: scale(1.1);
+.menu__item:hover {
+  color: darken($less-white, 10);
 }
 
 @media (min-width: $desktop-breakpoint) {
