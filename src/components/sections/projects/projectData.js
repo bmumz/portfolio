@@ -1,8 +1,38 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faNode, faJsSquare, faReact } from "@fortawesome/free-brands-svg-icons"
+import {
+  faNode,
+  faJsSquare,
+  faReact,
+  faVuejs,
+} from "@fortawesome/free-brands-svg-icons"
 
 export const ProjectData = [
+  {
+    title: "Serenity Now!",
+    stack: (
+      <div className="project__stack">
+        <FontAwesomeIcon icon={faJsSquare} className="project__icon" />
+        <FontAwesomeIcon icon={faVuejs} className="project__icon" />
+        <p className="project__stackName">Ruby on Rails</p>
+      </div>
+    ),
+    image: "https://i.ibb.co/QJZPt3G/serenity-now.png",
+    details: (
+      <div>
+        <ul>
+          <li>
+            A Seinfeld trivia game featuring quotes from the main characters.
+          </li>
+          <li>Top scores are stored and displayed on a leaderboard</li>
+          <li>Front-end: Vue.js, Vuex for State Management</li>
+          <li>Back-end: A Ruby on Rails leaderboard</li>
+        </ul>
+      </div>
+    ),
+    link: "https://bmumz.github.io/serenity-now/",
+    github: "https://github.com/bmumz/serenity-now",
+  },
   {
     title: "You Go, Girl!",
     stack: (
@@ -61,7 +91,7 @@ export const ProjectData = [
         </ul>
       </div>
     ),
-    link: "https://www.islandhorizons.com",
+    link: "https://islandhorizons.netlify.app/",
     github: "https://www.github.com/bmumz/island-horizons",
   },
   {
