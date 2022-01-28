@@ -3,7 +3,7 @@ import { MenuData } from "./menuData"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import AnimatedButton from "./animatedButton"
 
-function Menu({ path, title }) {
+function Menu() {
   const [navbar, setNavbar] = useState(false)
 
   const showNavbar = () => setNavbar(!navbar)
@@ -23,12 +23,21 @@ function Menu({ path, title }) {
           <ul className="menu__list">
             {MenuData.map((item, index) => (
               <li key={index}>
-                <AnchorLink to={item.path} onAnchorLinkClick={showNavbar}>
-                  <span className="menu__item">
-                    <span className="menu__animation">{item.icon}</span>
-                    {item.title}
-                  </span>
-                </AnchorLink>
+                {item.title !== "Blog" ? (
+                  <AnchorLink to={item.path} onAnchorLinkClick={showNavbar}>
+                    <span className="menu__item">
+                      <span className="menu__animation">{item.icon}</span>
+                      {item.title}
+                    </span>
+                  </AnchorLink>
+                ) : (
+                  <a href={item.path} onClick={showNavbar}>
+                    <span className="menu__item">
+                      <span className="menu__animation">{item.icon}</span>
+                      {item.title}
+                    </span>
+                  </a>
+                )}
               </li>
             ))}
           </ul>

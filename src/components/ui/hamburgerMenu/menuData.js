@@ -30,7 +30,7 @@ export const MenuData = [
   },
   {
     title: "Blog",
-    path: "/blog",
+    path: "https://blog.brandi.codes",
     icon: <FontAwesomeIcon icon={faNewspaper} />,
   },
 ]
